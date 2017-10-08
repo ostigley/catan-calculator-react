@@ -1,5 +1,5 @@
 import React from 'react';
-import Hex from './HexWithNodes.jsx';
+import Hex from './Hex.jsx';
 export default ({rowNum, hexes}) => {
 
   return (

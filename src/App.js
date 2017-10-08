@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import Row from './Hex/Row.jsx'
-import Row2 from './Hex/Row-2.jsx'
-import Row3 from './Hex/Row-3.jsx'
 import {hexesRowsNodes} from './hexesRowsNodes.js'
 import './App.css';
 
