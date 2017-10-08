@@ -9,13 +9,15 @@ class App extends Component {
     this.state = hexesRowsNodes
   }
 
-  onChange(row, hexId, value) {
-    this.setState()
+  onChange(rowNum, hexIndex, hexId, value) {
+    const row = this.state[rowNum];
+    row[hexIndex].value = value
+    this.setState(row)
   }
   render() {
     const rows = []
     for(let row in this.state) {
-      rows.push(<Row rowNum={row+1} key={`row_${row+1}`} hexes={this.state[row]}/>)
+      rows.push(<Row rowNum={Number(row)} key={`row_${Number(row)+1}`} hexes={this.state[row]}/>)
     }
     return (
       <div className="catan-container">

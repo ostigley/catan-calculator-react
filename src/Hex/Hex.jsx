@@ -1,15 +1,16 @@
 import React from 'react';
 import Node from './Node.jsx'
-export default ({hexId, nodes}) => {
+export default ({hexId, nodes, rowNum, hexIndex}) => {
   const nodesToRender = nodes.map( (nodeName,i) => ( nodeName ? <Node
                                                 nodeId={nodeName}
                                                 position={i}
-                                                key={`node_id_${nodeName}`}/> : null));
+                                                key={`node_id_${nodeName}_${i}`}/> : null));
+  const onChange = e => console.log(e.target.value, hexId, rowNum, hexIndex)
   return (
     <div>
       <div className="hexagon" id={hexId}>
         {nodesToRender}
-        <select>
+        <select onChange={e => onChange(e)}>
           <option value="0">D</option>
           <option value="1">1</option>
           <option value="2">2</option>
