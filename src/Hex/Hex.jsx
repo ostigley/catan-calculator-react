@@ -9,7 +9,6 @@ export default ({hexId, nodes}) => {
     <div>
       <div className="hexagon" id={hexId}>
         {nodesToRender}
-        <p>{hexId}</p>
       </div>
     </div>);
 };
