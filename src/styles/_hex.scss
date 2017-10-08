@@ -5,6 +5,10 @@
   position: relative;
   margin-left: 0.1rem;
   margin-top: 1rem;
+
+  select {
+    margin-left: 4rem;
+  }
 }
 .hexagon:before {
   content: "";
