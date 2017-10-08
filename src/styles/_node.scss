@@ -5,11 +5,11 @@
   border-radius: 50%;
   z-index: 1;
   position: absolute;
-  // background: black;
+  background: black;
 
   @include modifier('0'){
-    top: -2.3rem;
-    left: 2.3rem;
+    top: -3rem;
+    left: 4.15rem;
     right: 2.3rem;
   }
   @include modifier('1'){
@@ -21,9 +21,8 @@
     right: -0.75rem;
   }
   @include modifier('3'){
-    bottom: -2.3rem;
-    left: 2.3rem;
-    right: 2.3rem;
+    bottom: -3rem;
+    left: 4.15rem;
   }
   @include modifier('4'){
     bottom: -0.75rem;
