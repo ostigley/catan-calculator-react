@@ -3,21 +3,11 @@ import Hex from './Hex'
 export default () => {
   return (
     <div className="row">
-      <div className="">
         <Hex />
-      </div>
-      <div className="">
         <Hex />
-      </div>
-      <div className="">
         <Hex />
-      </div>
-      <div className="">
         <Hex />
-      </div>
-      <div className="">
         <Hex />
-      </div>
     </div>);
 };
 
