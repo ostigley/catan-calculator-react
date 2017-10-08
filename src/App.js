@@ -14,8 +14,8 @@ class App extends Component {
   }
   render() {
     const rows = []
-    for(let i = 0; i < 5 ;i++) {
-      rows.push(<Row rowNum={i+1} key={`row_${i+1}`} hexes={this.state.rows[i]}/>)
+    for(let row in this.state) {
+      rows.push(<Row rowNum={row+1} key={`row_${row+1}`} hexes={this.state[row]}/>)
     }
     return (
       <div className="catan-container">
