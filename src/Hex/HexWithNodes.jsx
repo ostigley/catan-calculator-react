@@ -9,6 +9,7 @@ export default ({hexId, nodes}) => {
     <div>
       <div className="hexagon" id={hexId}>
         {nodesToRender}
+        {hexId}
       </div>
     </div>);
 };
