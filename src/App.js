@@ -10,10 +10,10 @@ class App extends Component {
       <div className="catan-container">
         <Row1 />
         <Row2 />
-        <Row3 />
+{/*        <Row3 />
         <Row2 />
         <Row1 />
-      </div>);
+*/}      </div>);
   }
 }
 

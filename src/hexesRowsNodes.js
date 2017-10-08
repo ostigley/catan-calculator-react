@@ -19,8 +19,8 @@ const hexesRowsNodes = {
   ],
   "rows": {
     "1": [
-            {"hexId": "i", "row": "1", "nodes": [] },
-            {"hexId": "h", "row": "1", "nodes": [] ,},
+            {"hexId": "i", "row": "1", "nodes": ["s", "sh", "shb", "srb","sr", "s"] },
+            {"hexId": "h", "row": "1", "nodes": [undefined, undefined, undefined, undefined, undefined, undefined ]},
             {"hexId": "s", "row": "1", "nodes": [] }
           ],
     "2": [],

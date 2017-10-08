@@ -1,8 +1,8 @@
 import React from 'react';
 
-export default () => {
+export default ({nodeId, position}) => {
   return (
-    <div className="node">
+    <div className={`node node--${position}`} id={nodeId}>
     </div>);
 };
 

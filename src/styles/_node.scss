@@ -3,4 +3,34 @@
   height: 1.5rem;
   border: solid 1px black;
   border-radius: 50%;
+  z-index: 1;
+  position: absolute;
+  // background: black;
+
+  @include modifier('0'){
+    top: -2.3rem;
+    left: 2.3rem;
+    right: 2.3rem;
+  }
+  @include modifier('1'){
+    top: -0.75rem;
+    right: -0.75rem;
+  }
+  @include modifier('2'){
+    bottom: -0.75rem;
+    right: -0.75rem;
+  }
+  @include modifier('3'){
+    bottom: -2.3rem;
+    left: 2.3rem;
+    right: 2.3rem;
+  }
+  @include modifier('4'){
+    bottom: -0.75rem;
+    left: -0.75rem;
+  }
+  @include modifier('5'){
+    top: -0.75rem;
+    left: -0.75rem;
+  }
 }
