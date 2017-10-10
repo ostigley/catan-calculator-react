@@ -1,16 +1,17 @@
 import React from 'react';
 import Node from './Node.jsx'
-export default ({hexId, nodes, rowNum, hexIndex}) => {
+export default ({hexId, nodes, rowNum, hexIndex, value, onChange, hexValues}) => {
   const nodesToRender = nodes.map( (nodeName,i) => ( nodeName ? <Node
                                                 nodeId={nodeName}
                                                 position={i}
-                                                key={`node_id_${nodeName}_${i}`}/> : null));
-  const onChange = e => console.log(e.target.value, hexId, rowNum, hexIndex)
+                                                key={`node_id_${nodeName}_${i}`}
+                                                hexValues={hexValues}/> : null));
+  // const onChange = e => console.log(rowNum, hexIndex, hexId, e.target.value)
   return (
     <div>
       <div className="hexagon" id={hexId}>
         {nodesToRender}
-        <select onChange={e => onChange(e)}>
+        <select onChange={e => onChange(rowNum, hexIndex, hexId, e.target.value)} value={value}>
           <option value="0">D</option>
           <option value="1">1</option>
           <option value="2">2</option>
@@ -18,6 +19,12 @@ export default ({hexId, nodes, rowNum, hexIndex}) => {
           <option value="4">4</option>
           <option value="5">5</option>
           <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
         </select>
       </div>
     </div>);
