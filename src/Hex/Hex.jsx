@@ -6,7 +6,6 @@ export default ({hexId, nodes, rowNum, hexIndex, value, onChange, hexValues}) =>
                                                 position={i}
                                                 key={`node_id_${nodeName}_${i}`}
                                                 hexValues={hexValues}/> : null));
-  // const onChange = e => console.log(rowNum, hexIndex, hexId, e.target.value)
   return (
     <div>
       <div className="hexagon" id={hexId}>
