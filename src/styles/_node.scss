@@ -9,10 +9,9 @@
   p {
     position: relative;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    height: 50%;
+    margin: auto;
+    text-align: center;
+    line-height: 1.5rem;
   }
 
   @include modifier('0'){
