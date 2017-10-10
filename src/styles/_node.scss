@@ -5,7 +5,15 @@
   border-radius: 50%;
   z-index: 1;
   position: absolute;
-  background: black;
+
+  p {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 50%;
+  }
 
   @include modifier('0'){
     top: -3rem;
@@ -31,5 +39,50 @@
   @include modifier('5'){
     top: -0.75rem;
     left: -0.75rem;
+  }
+  @include modifier('probability-15'){
+    background-color: #cc0000;
+  }
+  @include modifier('probability-14'){
+    background-color: #cc3300;
+  }
+  @include modifier('probability-13'){
+    background-color: #cc6600;
+  }
+  @include modifier('probability-12'){
+    background-color: #cc9900;
+  }
+  @include modifier('probability-11'){
+    background-color: #cccc00;
+  }
+  @include modifier('probability-10'){
+    background-color: #99cc00;
+  }
+  @include modifier('probability-9'){
+    background-color: #66cc00;
+  }
+  @include modifier('probability-8'){
+    background-color: #33cc00;
+  }
+  @include modifier('probability-7'){
+    background-color: #00cc00;
+  }
+  @include modifier('probability-6'){
+    background-color: #00cc33;
+  }
+  @include modifier('probability-5'){
+    background-color: #00cc66;
+  }
+  @include modifier('probability-4'){
+    background-color: #00cc99;
+  }
+  @include modifier('probability-3'){
+    background-color: #00cccc;
+  }
+  @include modifier('probability-2'){
+    background-color: #0099cc;
+  }
+  @include modifier('probability-1'){
+    background-color: #0066cc;
   }
 }
