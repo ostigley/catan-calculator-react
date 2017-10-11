@@ -6,24 +6,19 @@ export default ({hexId, nodes, rowNum, hexIndex, value, onChange, hexValues}) =>
                                                 position={i}
                                                 key={`node_id_${nodeName}_${i}`}
                                                 hexValues={hexValues}/> : null));
+
+  const nextValue = value => {
+    if (value === 12) return 0;
+    if( value === 6) return 8;
+    if (value === 0) return 2;
+    return Number(value) + 1;
+  }
+
   return (
     <div>
-      <div className="hexagon" id={hexId}>
+      <div className="hexagon" id={hexId} onClick={() => onChange(rowNum, hexIndex, hexId, nextValue(value))}>
         {nodesToRender}
-        <select onChange={e => onChange(rowNum, hexIndex, hexId, e.target.value)} value={value}>
-          <option value="0">D</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-          <option value="10">10</option>
-          <option value="11">11</option>
-          <option value="12">12</option>
-        </select>
+          <div className="hexagon__value"><p>{value}</p></div>
       </div>
     </div>);
 };
